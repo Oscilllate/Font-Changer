@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+  background: #1e1e2f;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.toolbar {
+  margin-bottom: 0.5rem;
+}
+
+.toolbar button {
+  margin: 0.3rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #444;
+  color: #fff;
+  cursor: pointer;
+}
+
+.toolbar button.active {
+  background: #ffcc00;
+  color: #000;
+}
+
+.editor {
+  min-height: 120px;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #2e2e3e;
+  color: #fff;
+  outline: none;
+}
+
+.editor:empty::before {
+  content: attr(data-placeholder);
+  color: #aaa;
+}

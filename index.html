@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unicode Text Styler</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>✨ Unicode Text Styler ✨</h1>
+
+  <div class="toolbar">
+    <button data-style="default" name="default">Normal</button>
+    <button data-style="bold" name="bold">Bold</button>
+    <button data-style="italic" name="italic">Italic</button>
+    <button data-style="boldItalic" name="boldItalic">Bold Italic</button>
+    <button data-style="script" name="script">Script</button>
+    <button data-style="boldScript" name="boldScript">Bold Script</button>
+    <button data-style="fraktur" name="fraktur">Fraktur</button>
+    <button data-style="boldFraktur" name="boldFraktur">Bold Fraktur</button>
+    <button data-style="monospace" name="monospace">Monospace</button>
+    <button data-style="doubleStruck" name="doubleStruck">Double-Struck</button>
+    <button data-style="retro" name="retro">Retro</button>
+    <button data-style="oldEnglish" name="oldEnglish">Old English</button>
+  </div>
+
+  <div id="textInput" contenteditable="true" class="editor" data-placeholder="Type your text here..."></div>
+  <div id="output" class="output" data-placeholder="Styled output will appear here..."></div>
+  <button id="copyButton">📋 Copy</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
